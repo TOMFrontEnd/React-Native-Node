@@ -1,0 +1,10 @@
+use uuid.random instead
+import uuid from 'uuid-random'; 
+// uuid-random works here, wasted lot of time. The one in the video fixed as above
+const App = () => {
+  const [items, setItems] = useState([
+    {id: uuid(), text: 'Milk'},
+    {id: uuid(), text: 'Eggs'},
+    {id: uuid(), text: 'Bread'},
+    {id: uuid(), text: 'Juice'},
+  ]);
